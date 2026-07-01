@@ -1,0 +1,63 @@
+{
+  "clients": [
+    {
+      "id": "C001",
+      "name": "Acme Corporation",
+      "industry": "Manufacturing",
+      "size": "Enterprise",
+      "primary_contacts": [
+        {"name": "John Smith", "role": "CTO", "email": "jsmith@acme.com"},
+        {"name": "Sarah Lee", "role": "IT Director", "email": "slee@acme.com"}
+      ],
+      "contract_value": 450000,
+      "issues": [
+        {"id": "ISS-101", "title": "Network latency on east coast servers", "severity": "High", "days_open": 5, "owner": "Mike Torres"},
+        {"id": "ISS-102", "title": "VPN client failing on Windows 11", "severity": "Medium", "days_open": 12, "owner": "Priya Nair"},
+        {"id": "ISS-103", "title": "Backup job not completing overnight", "severity": "High", "days_open": 3, "owner": "Mike Torres"}
+      ],
+      "engagement_history": [
+        {"date": "2026-06-20", "type": "QBR", "summary": "Reviewed Q2 performance, client happy with uptime improvements", "sentiment": "positive"},
+        {"date": "2026-06-10", "type": "Call", "summary": "Discussed network latency issue, client frustrated with resolution time", "sentiment": "negative"},
+        {"date": "2026-05-28", "type": "Email", "summary": "Sent renewal proposal for next fiscal year", "sentiment": "neutral"}
+      ]
+    },
+    {
+      "id": "C002",
+      "name": "BlueSky Financial",
+      "industry": "Financial Services",
+      "size": "Mid-Market",
+      "primary_contacts": [
+        {"name": "Rachel Kim", "role": "VP Operations", "email": "rkim@bluesky.com"},
+        {"name": "Tom Grant", "role": "CISO", "email": "tgrant@bluesky.com"}
+      ],
+      "contract_value": 175000,
+      "issues": [
+        {"id": "ISS-201", "title": "MFA not working for remote users", "severity": "Critical", "days_open": 2, "owner": "Dana Wells"},
+        {"id": "ISS-202", "title": "Monthly compliance report missing data", "severity": "Medium", "days_open": 8, "owner": "Priya Nair"}
+      ],
+      "engagement_history": [
+        {"date": "2026-06-22", "type": "Call", "summary": "Urgent call about MFA outage, client escalated to executive level", "sentiment": "negative"},
+        {"date": "2026-06-01", "type": "QBR", "summary": "Strong QBR, client praised security team responsiveness", "sentiment": "positive"},
+        {"date": "2026-05-15", "type": "Email", "summary": "Shared updated compliance documentation", "sentiment": "neutral"}
+      ]
+    },
+    {
+      "id": "C003",
+      "name": "Greenfield Retail",
+      "industry": "Retail",
+      "size": "Small Business",
+      "primary_contacts": [
+        {"name": "Carlos Mendez", "role": "CEO", "email": "cmendez@greenfield.com"}
+      ],
+      "contract_value": 48000,
+      "issues": [
+        {"id": "ISS-301", "title": "POS system integration intermittently failing", "severity": "High", "days_open": 7, "owner": "Dana Wells"}
+      ],
+      "engagement_history": [
+        {"date": "2026-06-18", "type": "Call", "summary": "Client concerned about POS issues ahead of summer sale season", "sentiment": "negative"},
+        {"date": "2026-06-05", "type": "Email", "summary": "Sent troubleshooting guide for POS integration", "sentiment": "neutral"},
+        {"date": "2026-05-20", "type": "QBR", "summary": "Positive QBR, client expanding to 2 new locations", "sentiment": "positive"}
+      ]
+    }
+  ]
+}
