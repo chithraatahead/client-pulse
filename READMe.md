@@ -1,10 +1,6 @@
-Client Pulse — AHEAD Account Brief
+### Client Pulse — AHEAD Account Brief
 
-### Why 'Client Pulse' Does
 A Claude-powered one page briefing for AHEAD account teams. Ask Claude about any client by name and get a structured, branded HTML briefing in seconds — open issues, engagement history, key contacts, and the three things you need to know about your Account.
-
-
-### What 'Client Pulse' Does
 
 A sales rep types:
 
@@ -105,7 +101,7 @@ Each tool returns a different type of data at a different granularity. Splitting
 
 The brief asked for mock data. JSON is readable, editable, and requires zero setup. For production this would be a Salesforce API call or the where the Call,QBR and Email related sentiment data reside — the tool structure stays same, only the data layer changes.
 
-### Why those 3 signal cards?
+### Why 3 signal cards?
 
 Designed around one question: what does a rep actually need in the 30 seconds before a call? The emotional temperature (last sentiment), what's pressing most and important to customer right now (open issues), and recent win along with the supporting detail.
 
@@ -113,15 +109,15 @@ Why a branded HTML output?
 
 Plain text briefings get ignored. A briefing that looks like an internal AHEAD product gets used. Which is also tending with Account team currently.  The HTML is self-contained — it can be saved, shared,hosted on Roost or screenshotted. 
 
-### Why a fixed HTML template in the system prompt?
+### Fixed HTML template?
 
 Giving Claude a complete template with {{PLACEHOLDERS}} produces consistent output every time with precision. Without a template, Claude improvises the layout on each run — output looks different, sections move around, reps can't build a mental model of where to look. Consistency is a feature.
 
-### Why Claude desktop why not claude.ai
+### Claude desktop vs claude.ai
 This implementation uses Claude Desktop to connect to the local MCP server. Claude.ai in the browser does not currently support custom local MCP servers. In production, the MCP server would be hosted in the cloud, enabling use from Claude.ai or any web interface with zero local setup.
 
 
-### What I'd Do Differently With More Time
+### Future Improvements
 
 1. Connect to real Salesforce data and real sentiment data for QBR, Email and Calls
 The JSON mock is a stand-in. In production, get_client_profile would call the Salesforce REST API or MCP. The tool interface is identical — only the data source changes.
@@ -138,9 +134,6 @@ The MCP server runs locally right now. For enterprise rollout it would deploy to
 5. Feedback loop
 Add a thumbs up/down to the briefing HTML. Track which sections reps actually use. Survey win rates on calls where reps used the briefing vs. didn't. Use that data to iterate the prompt and the template.
          
-
 The pattern built here — MCP tools + Claude skill + structured HTML output — is fully reusable. The same architecture could power pre-QBR deep dives, renewal alerts, new rep onboarding briefs, and executive dashboards. The MCP server is the reusable layer. Each skill is just a different way of asking it questions.
-
-
 
 Built as part of the AHEAD FDE Technical Assessment — AI Engineering
