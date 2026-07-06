@@ -72,7 +72,7 @@ Step 5 — Set up the Project
 In Claude Desktop:
 
 Create a New Project called "Client Pulse"
-Paste the system prompt from skill/SKILL.md into Project Instructions
+Paste the system prompt from skill/system-prompt.txt into Project Instructions
 Start a new chat and type: Give me a pulse on Acme Corporation
 
 
